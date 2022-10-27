@@ -18,36 +18,29 @@ Hasta abajo hay una sección con todas las funciones ('Funciones. Compendio'), p
 
 ## Conclusiones
 ### Primera evaluación del modelo
+Pregunta|Lexema esperado|¿Acertó?
+|:---|:---|:---|
+Documento que quemó Martín Lutero|Exsurge Domine|Sí
+Tipo de monje que era martín Lutero|Orden de San Agustín|No
+Batallas entre católicos y protestantes|"Guerra de los ochenta años". No mostró "Guerra de Esmalcalda"|Parcial
+Dónde se enfrentó Lutero a Carlos quinto|Dieta de Worms|Sí
+Escrito de martín lutero a los principales alemanes|A la nobleza cristiana de la nación alemana|Sí
+Precursores de la reforma|"Husita", "Remonstrante", "Gomarista". Faltó "Valdense"|Parcial
+Documento donde se excomulga a Lutero|Decet Romanum Pontificem|Sí
+Escrito más famoso de Martín Lutero|Noventa y cinco tesis|Sí
+Cómo se llama cuando el pan y el vino se hacen el cuerpo de Cristo|Eucaristía. Transubstanciación|Sí
 
-|**Búsquedas exitosas:**|**Búsquedas fallidas**|
-|---|---|
-**Documento que quemó Martín Lutero** | **Tipo de monje que era martín Lutero**
-*- "Exsurge Domine"* |*- Se esperaba "Orden de San Agustín"*
-**Batallas entre católicos y protestantes**
-*- "Guerra de los ochenta años". No mostró "Guerra de Esmalcalda"*
-**¿Dónde se enfrentó Lutero a Carlos quinto?**
-*- "Dieta de Worms"*
-**Escrito de martín lutero a los principales alemanes**
-*- "A la nobleza cristiana de la nación alemana"*
-**Precursores de la reforma (parcial)**
-*- "Husita", "Remonstrante", "Gomarista". Faltó "Valdense"*
-**Documento donde se excomulga a Lutero**
-*- "Decet Romanum Pontificem"*
-**Escrito más famoso de Martín Lutero**
-*- "95 tesis"*
-**- Cómo se llama cuando el pan y el vino se hacen el cuerpo de Cristo**
-*- "Eucaristía. Transubstanciación"*
+**Columnas**
+- "Pregunta": La pregunta hecha por un usuario ficticio al diccionario
+- "Lexema esperado": El término esperado[^1]
+- "¿Acertó?": Si salió el lexema esperado en una lista de 30 posibles resultados
+  - 10 principales similitudes con la lista de lexemas
+  - 10 principales búsquedas con las definiciones
+  - 10 principales búsquedas con la información extra
+
 
 ### Segunda evaluación del modelo
-- **Columna "*Test*":** Lista de test que se hicieron al modelo
-- **Columna "*Pregunta*":** La pregunta hecha por un usuario ficticio al diccionario
-- **Columna "*Lexema*":** El término esperado[^1]
-- **Columna "*¿Acertó?*":** Si salió el lexema esperado en una lista de 20 posibles resultados
- - 10 principales búsquedas en las definiciones
- - 10 principales búsquedas en la información extra
-- **Columna "*¿Lexema acertó?*":** Si salió el lexema esperado en una lista de 10 posibles resultados. Estos resultados fueron comparados exclusivamente con los términos
-
-Test|Pregunta|Lexema|¿Acertó?|¿Lexema acertó?
+Test|Pregunta|Lexema esperado|¿Acertó?|¿Lexema acertó?
 :---|:---|:---|:---|:---
 t1|pastor de la iglesia valdense|Barba.|No|No|
 t2|himno de la reforma protestante|Castillo fuerte es nuestro Dios.|Sí|-|
@@ -70,4 +63,14 @@ t18|cómo se llama la iglesia de los menonitas|Anabaptista, iglesia|No|No|
 t19|cuáles son los documentos más importantes de la iglesia católica|Bula.|No|No|
 t20|cuál es la enseñanza de Calvino que dice que la salvación no se pierde|Cinco puntos calvinistas. 5. Perseverancia de los Santos.|Sí|-|
 
-[^1]: Se utilizó "lexema" en lugar de "término" para evitar la confusión semántica entre el segundo y la flexión verbal "termino", al momento de programar
+**Columnas**
+- "Test":  Lista de test que se hicieron al modelo
+- "Pregunta": La pregunta hecha por un usuario ficticio al diccionario
+- "Lexema esperado": El término esperado[^2]
+- "¿Acertó":  Si salió el lexema esperado en una lista de 20 posibles resultados
+  - 10 principales búsquedas con las definiciones
+  - 10 principales búsquedas con la información extra
+- "¿Acertó lexema?":  Si salió el lexema esperado en una lista de 10 posibles resultados. Estos resultados fueron comparados exclusivamente con los términos
+
+[^1]: Aunque en la tesis se utiliza "término", en este trabajo se utilizó "lexema" para evitar la confusión semántica entre "término" y la flexión verbal "termino", al momento de programar
+[^2]: *Ídem*
