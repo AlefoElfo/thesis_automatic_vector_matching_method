@@ -1,5 +1,5 @@
 # Diálogo sema onomasiológico. Teoría, método y resultados para el *Diccionario de la Reforma Protestante*
-*Tesis*
+> Resultados para el *Diccionario de la Reforma Protestante*
 
 ## Explicación
 
@@ -14,8 +14,10 @@ Las principales secciones son:
 - Evaluaciones
 - Conclusión
 
+
 Hasta abajo del :link: [notebook](https://colab.research.google.com/github/AlefoElfo/nlp.onomasiology.thesis/blob/main/Tesis_PLN_y_di%C3%A1logo_sema_onomasiol%C3%B3gico.ipynb) hay una sección con todas las funciones para facilitar la exploración ('Funciones. Compendio'). Es **importante** aclarar que el diccionario sólo tiene 70 términos y no todos tienen mucha información. A mayor información crecerá la fidelidad, pues el modelo tendrá más datos por analizar.
 
+El código es totalmente libre, pero no el contenido del diccionario: sus términos, definiciones e información extra. El diccionario está registrado para proteger los derechos de autor. **No plagies mi trabajo, mejor apóyame para terminarlo.** *Mejores son dos que uno; porque tienen mejor paga de su trabajo (Ecl 4.9)*. [Diccionario de la Reforma Protestante](https://www.facebook.com/DiccionarioReforma)
 ## Primera evaluación del modelo
 Se omiten las "Preguntas con contenido ajeno al diccionario" y "Preguntas con contenido relacionado, pero sin lexema al que se alude", las cuáles sí están disponibles en el :link: [notebook](https://colab.research.google.com/github/AlefoElfo/nlp.onomasiology.thesis/blob/main/Tesis_PLN_y_di%C3%A1logo_sema_onomasiol%C3%B3gico.ipynb).
 
