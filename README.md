@@ -1,5 +1,5 @@
-# Diálogo sema onomasiológico. Teoría, método y resultados para el *Diccionario de la Reforma Protestante*
-> Resultados para el *Diccionario de la Reforma Protestante*
+# Resultados con método automático por similitud de vectores
+> Tesis: Diálogo sema onomasiológico. Teoría, método y resultados para el *Diccionario de la Reforma Protestante*
 
 ## Explicación
 
