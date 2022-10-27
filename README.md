@@ -5,22 +5,22 @@
 
 Aquí se muestran los resultados finales de la tesis, la cual estará disponible una vez sea presentada, aprobada y publicada.
 
-Se almacenan en un jupyter notebook. Para mayor comodidad se recomienda abrirlo desde :link: [Google Colab](https://colab.research.google.com/github/AlefoElfo/nlp.onomasiology.thesis/blob/main/Tesis_PLN_y_di%C3%A1logo_sema_onomasiol%C3%B3gico.ipynb) o, si se prefiere, desde aquí mismo, en :link:[GitHub](https://github.com/AlefoElfo/nlp.onomasiology.thesis/blob/main/Tesis_PLN_y_di%C3%A1logo_sema_onomasiol%C3%B3gico.ipynb). 
+Se almacenan en un *jupyter notebook*. Para mayor comodidad se recomienda abrirlo desde :link: [Google Colab](https://colab.research.google.com/github/AlefoElfo/nlp.onomasiology.thesis/blob/main/Tesis_PLN_y_di%C3%A1logo_sema_onomasiol%C3%B3gico.ipynb) o, si se prefiere, desde aquí mismo, en :link:[GitHub](https://github.com/AlefoElfo/nlp.onomasiology.thesis/blob/main/Tesis_PLN_y_di%C3%A1logo_sema_onomasiol%C3%B3gico.ipynb). 
 
 Las principales secciones son:
 - Diccionario de la Reforma Protestante
 - Pregunta natural al diccionario
 - Respuesta para el usuario
 - Evaluaciones
-- Conclusiones
+- Conclusión
 
-Hasta abajo hay una sección con todas las funciones ('Funciones. Compendio'), para facilitar la exploración. Es **importante** aclarar que el diccionario sólo tiene 70 términos y no todos tienen mucha información. A mayor información crecerá la fidelidad, pues el modelo tendrá más datos por analizar.
+Hasta abajo del :link: [notebook](https://colab.research.google.com/github/AlefoElfo/nlp.onomasiology.thesis/blob/main/Tesis_PLN_y_di%C3%A1logo_sema_onomasiol%C3%B3gico.ipynb) hay una sección con todas las funciones para facilitar la exploración ('Funciones. Compendio'). Es **importante** aclarar que el diccionario sólo tiene 70 términos y no todos tienen mucha información. A mayor información crecerá la fidelidad, pues el modelo tendrá más datos por analizar.
 
 ## Primera evaluación del modelo
 Se omiten las "Preguntas con contenido ajeno al diccionario" y "Preguntas con contenido relacionado, pero sin lexema al que se alude", las cuáles sí están disponibles en el :link: [notebook](https://colab.research.google.com/github/AlefoElfo/nlp.onomasiology.thesis/blob/main/Tesis_PLN_y_di%C3%A1logo_sema_onomasiol%C3%B3gico.ipynb).
 
 ### Resultados
-Pregunta|Lexema esperado|¿Acertó?
+**Pregunta**|**Lexema esperado**|**¿Acertó**?
 |:---|:---|:---|
 Documento que quemó Martín Lutero|Exsurge Domine|Sí
 Tipo de monje que era martín Lutero|Orden de San Agustín|No
@@ -35,10 +35,10 @@ Cómo se llama cuando el pan y el vino se hacen el cuerpo de Cristo|Eucaristía.
 ### Columnas
 - "Pregunta": La pregunta hecha por un usuario ficticio al diccionario
 - "Lexema esperado": El término esperado[^1]
-- "¿Acertó?": Si salió el lexema esperado en una lista de 30 posibles resultados
+- "¿Acertó?": Si salió el lexema esperado en un total de 30 posibles similitudes
   - 10 principales similitudes con la lista de lexemas
-  - 10 principales búsquedas con las definiciones
-  - 10 principales búsquedas con la información extra
+  - 10 principales similitudes con la información extra
+  - 10 principales similitudes con las definiciones
 
 
 ## Segunda evaluación del modelo
@@ -67,25 +67,32 @@ t19|cuáles son los documentos más importantes de la iglesia católica|Bula.|No
 t20|cuál es la enseñanza de Calvino que dice que la salvación no se pierde|Cinco puntos calvinistas. 5. Perseverancia de los Santos.|Sí|-|
 
 ### Columnas
-- "Test":  Lista de test que se hicieron al modelo
+- "Test":  test que se hicieron al modelo, del 1 al 20
 - "Pregunta": La pregunta hecha por un usuario ficticio al diccionario
 - "Lexema esperado": El término esperado[^2]
-- "¿Acertó":  Si salió el lexema esperado en una lista de 20 posibles resultados
-  - 10 principales búsquedas con las definiciones
-  - 10 principales búsquedas con la información extra
-- "¿Acertó lexema?":  Si salió el lexema esperado en una lista de 10 posibles resultados. Estos resultados fueron comparados exclusivamente con los términos
+- "¿Acertó":  Si salió el lexema esperado en una lista de 20 posibles similitudes
+  - 10 principales similitudes con las definiciones
+  - 10 principales similitudes con la información extra
+- "¿Acertó lexema?":  Si salió el lexema esperado en una lista de 10 posibles similitudes. Estos resultados fueron comparados exclusivamente con los términos
 
-## Conclusiones
-### Fidelidad del modelo
-El proceso onomasiológico sí se logra.
- - Primera evaluación muestra fidelidad de 77%
- - Segunda evaluación muestra fidelidad de 50%
+## Conclusión
+**El proceso onomasiológico sí se logra** con una fidelidad de:
+ - 77% (Primera evaluación) 
+ - 50% (Segunda evaluación) 
 
-La tasa de éxito necesita mejorar mucho. Esto se puede lograr con:
+Un 50%, y en un escenario controlado, puede mostrar un modelo poco alentador; pero se ha reducido abismalmente el problema que motivó la tesis:
+
+>Los diccionarios no pueden ofrecer sus significados expuestos ni precisarlos si los lectores desconocen u olvidan los significantes.
+
+Ahora, en sentido figurado, no hace falta encontrar una aguja en un pajar, sólo basta tirar una moneda al aire. Pero La tasa de éxito debe mejorar mucho. Esto se puede lograr con:
  - :link: [Pipelines](https://spacy.io/usage/processing-pipelines) personalizadas desde spaCy
  - Una mayor cantidad de términos, definiciones e información extra
  - Un lenguaje más claro al momento de definir
  - Un lenguaje intencional para que haya una mayor tasa de éxito
+ - Un nuevo modelo que contemple herramientas mucho más avanzadas, con Inteligencia Artificial[^3]
+   - Machine Learning
+   - Deep learning
+   - Redes neuronales artificiales
 
 ### Problemas por resolver
 Los pocos términos en el diccionario reducen mucho la capacidad de respuesta del modelo. Se necesita aumentar los términos, las definiciones y la información extra. También agregar biografías.
@@ -98,13 +105,9 @@ Otro problema es cuando la pregunta del usuario tiene alta coincidencia con tér
  - El modelo ayuda a descubrir sesgos al momento de definir términos
  - Se traza un camino hacia un mejor modelo que eleve el porcentaje de similitud y que disminuya el porcentaje de similitud con palabras secundarias.
 
-Un porcentaje de fidelidad de 50%, en un escenario controlado puede no ser muy alentador, pero ha reducido abismalmente el problema que motivó la tesis:
-
->Los diccionarios no pueden ofrecer sus significados expuestos ni precisarlos si los lectores desconocen u olvidan los significantes.
-
-Ahora, en sentido figurado, no hace falta encontrar una aguja en un pajar, sólo basta tirar una moneda al aire.
 
 
 
 [^1]: Aunque en la tesis se utiliza "término", en este trabajo se utilizó "lexema" para evitar la confusión semántica entre "término" y la flexión verbal "termino", al momento de programar
 [^2]: *Ídem*
+[^3]: Más allá de la capacidad del tesista
