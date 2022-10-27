@@ -16,8 +16,9 @@ Las principales secciones son:
 
 Hasta abajo hay una sección con todas las funciones ('Funciones. Compendio'), para facilitar la exploración.
 
-## Conclusiones
-### Primera evaluación del modelo
+## Primera evaluación del modelo
+Se omiten las "Preguntas con contenido ajeno al diccionario" y "Preguntas con contenido relacionado, pero sin lexema al que se alude", las cuáles sí están disponibles en el :link: [notebook](https://colab.research.google.com/github/AlefoElfo/nlp.onomasiology.thesis/blob/main/Tesis_PLN_y_di%C3%A1logo_sema_onomasiol%C3%B3gico.ipynb).
+
 Pregunta|Lexema esperado|¿Acertó?
 |:---|:---|:---|
 Documento que quemó Martín Lutero|Exsurge Domine|Sí
@@ -39,7 +40,7 @@ Cómo se llama cuando el pan y el vino se hacen el cuerpo de Cristo|Eucaristía.
   - 10 principales búsquedas con la información extra
 
 
-### Segunda evaluación del modelo
+## Segunda evaluación del modelo
 Test|Pregunta|Lexema esperado|¿Acertó?|¿Lexema acertó?
 :---|:---|:---|:---|:---
 t1|pastor de la iglesia valdense|Barba.|No|No|
@@ -71,6 +72,8 @@ t20|cuál es la enseñanza de Calvino que dice que la salvación no se pierde|Ci
   - 10 principales búsquedas con las definiciones
   - 10 principales búsquedas con la información extra
 - "¿Acertó lexema?":  Si salió el lexema esperado en una lista de 10 posibles resultados. Estos resultados fueron comparados exclusivamente con los términos
+
+## Conclusiones
 
 [^1]: Aunque en la tesis se utiliza "término", en este trabajo se utilizó "lexema" para evitar la confusión semántica entre "término" y la flexión verbal "termino", al momento de programar
 [^2]: *Ídem*
