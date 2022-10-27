@@ -82,7 +82,7 @@ t20|cuál es la enseñanza de Calvino que dice que la salvación no se pierde|Ci
 
 Un 50%, y en un escenario controlado, puede mostrar un modelo poco alentador; pero se ha reducido abismalmente el problema que motivó la tesis:
 
->Los diccionarios no pueden ofrecer sus significados expuestos ni precisarlos si los lectores desconocen u olvidan los significantes.
+> <mark>Los diccionarios no pueden ofrecer sus significados expuestos ni precisarlos si los lectores desconocen u olvidan los significantes.</mark>
 
 Ahora, en sentido figurado, no hace falta encontrar una aguja en un pajar, sólo basta tirar una moneda al aire. Pero La tasa de éxito debe mejorar mucho. Esto se puede lograr con:
  - :link: [Pipelines](https://spacy.io/usage/processing-pipelines) personalizadas desde spaCy
